@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* body태그 자체에 css 요소 부여 */
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+        }
+
+        .container {
+            width: 390px;
+            background-color: rgb(159, 191, 247);
+            height: 100%;
+        }
+
+        .photos {
+            margin-top: 30px;
+        }
+
+        .photo-frame {
+            background-color: white;
+            margin: 15px 20px;
+            height: 300px;
+
+            background-size: cover;
+            
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title {
+            color: white;
+            font-size: 25px;
+            font-weight: 900px;
+        }
+
+        .f-date {
+            color: white;
+            font-size: 15px;
+            font-weight: 500px;
+        }
+
+        #image1 {
+            background-image: url('./사진1.jpg');
+            background-position: center;
+                background-repeat: no-repeat;
+                /* background-size: contain; */
+        }
+
+        #image2 {
+            background-image: url('./사진2.jpg');
+            background-position: center;
+                background-repeat: no-repeat;
+        }
+
+        #image3 {
+            background-image: url('./사진3.jpg');
+            background-position: center;
+                background-repeat: no-repeat;
+        }
+
+        #image4 {
+            background-image: url('./사진4.jpg');
+            background-position: center;
+                background-repeat: no-repeat;
+        }
+
+        .photo_description {
+            color: white;
+            background-color: rgb(83, 191, 250);
+
+            width: fit-content;
+            padding: 0 2opx;
+            margin-bottom: 10px;
+            
+            border-radius: 10px;
+            
+
+            transform: translate(-50%);
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description"> 이호테우 해수욕장 🤍 </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description"> 바다뷰 최고,,,🏝 </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description"> 내 머리 먹지마 박숑횬😖 </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description"> 무셔버 호달달🥶 </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">+ 214 🤍</p>
+            <p class="f-date">2023.02.14</p>
+        </div>
+    </div>
+</body>
+</html>
